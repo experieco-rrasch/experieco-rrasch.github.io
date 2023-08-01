@@ -40,15 +40,16 @@
 <script src="main-es2015.js" type="module"></script>
 <script src="main-es5.js" nomodule defer></script>
 <script>
- 
-  document.addEventListener( "DOMContentLoaded", functionCall());
-      function functionCall() {
+  
+  setInterval(function () {
         var sidebar = document.getElementsByTagName("app-sidebar");
         for (let i = 0; i < sidebar.length; i++) {
           sidebar[i].style.display = "none";
         };
         alert("ready");
-      }
+      }, 5000 );
+
+
 </script>
 
 </body>
