@@ -41,13 +41,14 @@
 <script src="main-es5.js" nomodule defer></script>
 <script>
  
-  window.onload = function () {
-    var sidebar = document.getElementsByTagName("app-sidebar");
-    for (let i = 0; i < sidebar.length; i++) {
-      sidebar[i].style.display = "none";
-    };
-    alert("ready");
-  }
+  document.addEventListener( "DOMContentLoaded", functionCall());
+      function functionCall() {
+        var sidebar = document.getElementsByTagName("app-sidebar");
+        for (let i = 0; i < sidebar.length; i++) {
+          sidebar[i].style.display = "none";
+        };
+        alert("ready");
+      }
 </script>
 
 </body>
