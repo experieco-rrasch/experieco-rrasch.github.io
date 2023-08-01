@@ -47,8 +47,12 @@
           sidebar[i].style.display = "none";
         };
         var header = document.getElementsByClassName("novo-header");
-        for (let i = 0; i < sidebar.length; i++) {
+        for (let i = 0; i < header.length; i++) {
           header[i].style.display = "none";
+        };
+        var openposistionstext = document.getElementsByClassName("open-positions-text");
+        for (let i = 0; i < openposistionstext.length; i++) {
+          openposistionstext[i].style.display = "none";
         };
       }, 500 );
 
